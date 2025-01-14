@@ -6,7 +6,7 @@ order: 4
 ![banner.jpg]({{ site.url }}/assets/banner.jpg)
 
 
-assionné par la cybersécurité et l’infosec, je poursuis actuellement mes études en préparant la certification CEH v13.
+Passionné par la cybersécurité et l’infosec, je me forme en préparant la certification CEH v13.
 
 Cet espace me permet de structurer et de partager ce que j’apprends au fil de mon parcours. Mon objectif est double : consolider mes connaissances pour m'améliorer en continu, tout en les rendant accessibles à ceux qui partagent la même passion pour la sécurité informatique.
 
