@@ -6,11 +6,11 @@ order: 4
 ![banner.jpg]({{ site.url }}/assets/banner.jpg)
 
 
-Passionné par la cyber et l'infosec, je suis actuellement en train d'étudier la CEHv13.
+assionné par la cybersécurité et l’infosec, je poursuis actuellement mes études en préparant la certification CEH v13.
 
-Je profite de cet espace pour écrire sur ce que j'apprends afin de stocker l'information pour plus tard et pour vous la partager.
+Cet espace me permet de structurer et de partager ce que j’apprends au fil de mon parcours. Mon objectif est double : consolider mes connaissances pour m'améliorer en continu, tout en les rendant accessibles à ceux qui partagent la même passion pour la sécurité informatique.
 
-Comme disait Socrate, la connaissance n'a de valeur que si elle est partagée.
+Comme l’a si bien dit Socrate : « La connaissance n’a de valeur que si elle est partagée. » C’est dans cet esprit que je vous invite à découvrir mes articles et réflexions autour des outils, des techniques et des concepts clés de la cybersécurité.
 
 Vous pourrez retrouver mon Github ici :
 [t1t1-22](https://github.com/t1t1-22) /
