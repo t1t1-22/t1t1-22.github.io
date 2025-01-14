@@ -1,5 +1,5 @@
 ---
-title: "Google Dorking : Exploiter la Puissance de Google pour la Recherche Avancée"
+title: "Google Dorking : Exploiter la Puissance de Google pour la Recherche Avancée (Partie 1)"
 categories: [Footprinting et Reconnaissance, OSINT]
 tags: [Footprinting,Reconnaissance,recon]     # TAG names should always be lowercase
 ---
@@ -163,3 +163,5 @@ Le **Google Dorking** est une méthode puissante pour extraire des informations 
 Rappelez-vous : la meilleure défense contre le Google Dorking est de comprendre ses mécanismes et de limiter l’exposition des informations sensibles dès la conception des systèmes.
 
 ---
+
+Partie 2 : [Google Dorking : Exploitation Avancée avec Lynx et SGPT (Partie 2)](https://t1t1-22.github.io/posts/Google_Dorking-part2/)
