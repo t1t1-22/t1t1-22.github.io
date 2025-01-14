@@ -6,7 +6,7 @@ tags: [Footprinting,Reconnaissance,recon]     # TAG names should always be lower
 
 
 
-# Google Dorking : Exploiter la Puissance de Google pour la Recherche Avancée
+# Google Dorking : Exploiter la Puissance de Google pour la Recherche Avancée (Partie 1)
 
 
 ![fgoogle-dorking.png]({{ site.url }}/assets/google-dorking.png)
