@@ -1,6 +1,6 @@
 ---
 title: "TheHarvester : Un Outil de Reconnaissance en Source Ouverte"
-categories: [Collecte d'informations, OSINT]
+categories: [Footprinting et Reconnaissance, OSINT]
 tags: [information gathering, OSINT,Collecte d'informations]     # TAG names should always be lowercase
 ---
 
