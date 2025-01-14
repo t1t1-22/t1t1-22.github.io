@@ -1,6 +1,6 @@
 ---
 title: "Footprinting et Reconnaissance : Les Fondations de la Cyberattaque"
-categories: [Footprinting et Reconnaissance]
+categories: [Concepts généraux]
 tags: [Footprinting,Reconnaissance,recon]     # TAG names should always be lowercase
 ---
 
