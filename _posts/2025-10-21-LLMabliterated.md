@@ -41,16 +41,16 @@ Un cas notable : en 2025 des attaquants liés à la Chine ont demandé à Gemini
 
 Les usages offensifs de LLM (notamment Abliterated) sont encore émergents, mais plusieurs cas réels ou plausibles ont été rapportés :
 
-- **WormGPT (juillet 2023)** : un LLM prétendument conçu pour le cybercrime (basé sur GPT-J ou similaire) a fait l’objet d’une fuite fin 2022. Il visait principalement la création de leurres de phishing et de campagnes BEC. SlashNext et DarkReading ont décrit WormGPT comme le « ChatGPT du Dark Web » pour les criminels, générant du texte et du code sans éthique [DarkReading](https://www.darkreading.com/cyberattacks-data-breaches/wormgpt-cybercrime-tool-heralds-an-era-of-ai-malware-v-ai-defenses). Les analystes soulignent que de tels outils accélèrent la diffusion de mails ciblés (spear-phishing) et d’attaques à grande échelle, notamment grâce à « la nature polymorphe des attaques à grande vitesse » permise par l’IA.
+- **WormGPT (juillet 2023)** : un LLM prétendument conçu pour le cybercrime (basé sur GPT-J ou similaire) a fait l’objet d’une fuite fin 2022. Il visait principalement la création de leurres de phishing et de campagnes BEC. SlashNext et DarkReading ont décrit WormGPT comme le « ChatGPT du Dark Web » pour les criminels, générant du texte et du code sans éthique [DarkReading](https://www.darkreading.com/cyberattacks-data-breaches/wormgpt-cybercrime-tool-heralds-an-era-of-ai-malware-v-ai-defenses).
+Les analystes soulignent que de tels outils accélèrent la diffusion de mails ciblés (spear-phishing) et d’attaques à grande échelle, notamment grâce à « la nature polymorphe des attaques à grande vitesse » permise par l’IA.
 
-- **FraudGPT, DarkestGPT (2023–2024)** : des LLMs « Malware-as-a-Service » ont été proposés en ligne. Le site de FraudGPT (début 2023) listait de multiples fonctionnalités offensives (génération de code malveillant, CVV checker, pages de phishing, etc.)  
-  [Talos Intelligence](https://blog.talosintelligence.com/cybercriminal-abuse-of-large-language-models/). DarkestGPT (mi-2024) promettait des RATs et malwares indétectables. Ces offres ont parfois été identifiées comme arnaques, mais elles montrent l’intérêt criminel pour de tels outils.
+- **FraudGPT, DarkestGPT (2023–2024)** : des LLMs « Malware-as-a-Service » ont été proposés en ligne. Le site de FraudGPT (début 2023) listait de multiples fonctionnalités offensives (génération de code malveillant, CVV checker, pages de phishing, etc.) [Talos Intelligence](https://blog.talosintelligence.com/cybercriminal-abuse-of-large-language-models/).
+DarkestGPT (mi-2024) promettait des RATs et malwares indétectables. Ces offres ont parfois été identifiées comme arnaques, mais elles montrent l’intérêt criminel pour de tels outils.
 
-- **FunkSec (déc. 2024–janv. 2025)** : un groupe de rançongiciel auto-proclamé « powered by AI » a émergé. Check Point Research a analysé FunkSec, un ransomware-as-a-service opéré par des hackers allégant leurs compétences via l’IA  
-  [Check Point](https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/). L’enquête a montré que même un acteur peu qualifié peut créer un ransomware avancé si l’IA est mise à contribution.
+- **FunkSec (déc. 2024–janv. 2025)** : un groupe de rançongiciel auto-proclamé « powered by AI » a émergé. Check Point Research a analysé FunkSec, un ransomware-as-a-service opéré par des hackers allégant leurs compétences via l’IA. [Check Point](https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/)
+L’enquête a montré que même un acteur peu qualifié peut créer un ransomware avancé si l’IA est mise à contribution.
 
-- **BlackMamba (juil. 2023)** : un PoC de malware polymorphe généré par IA a été publié par HYAS Labs. BlackMamba exploite un binaire bénin qui contacte l’API GPT d’OpenAI au runtime pour synthétiser un keylogger en Python, qu’il exécute directement en mémoire  
-  [HYAS](https://www.hyas.com/blog/blackmamba-using-ai-to-generate-polymorphic-malware).
+- **BlackMamba (juil. 2023)** : un PoC de malware polymorphe généré par IA a été publié par HYAS Labs. BlackMamba exploite un binaire bénin qui contacte l’API GPT d’OpenAI au runtime pour synthétiser un keylogger en Python, qu’il exécute directement en mémoire. [HYAS](https://www.hyas.com/blog/blackmamba-using-ai-to-generate-polymorphic-malware).
 
 **Figure** : Extrait de la page « Tools & Potential » de DarkestGPT (source : Talos). Ce LLM malveillant vantait des fonctionnalités offensives (« Advanced Malware Generation », développement de RATs, techniques d’anonymisation, etc.). De tels modèles « uncensored » promettent aux attaquants de générer directement des codes d’attaque ou des payloads complexes (ex. trojans, keyloggers) sans aucune restriction.
 
@@ -58,15 +58,15 @@ Les usages offensifs de LLM (notamment Abliterated) sont encore émergents, mais
 
 Les LLM Abliterated facilitent la création de code hautement polymorphe et furtif, ce qui complique considérablement la détection par EDR classiques. Plusieurs mécanismes contribuent à cette furtivité :
 
-- **Polymorphisme adaptatif** : chaque exécution du malware peut générer du code différent, mais fonctionnellement identique. Ainsi, les signatures basées sur des chaînes ou des heuristiques statiques sont rapidement inefficaces  
-  [CardinalOps](https://cardinalops.com/blog/polymorphic-ai-malware-detection/)  
-  [SECURITY.COM](https://www.security.com/blog-post/no-escaping-ai). Comme l’explique CardinalOps, un malware IA peut « continuellement réécrire sa logique » : bien que la fonctionnalité reste la même, la structure du code change à chaque génération, rendant chaque échantillon nouveau et indétectable par correspondance de signature.
+- **Polymorphisme adaptatif** : chaque exécution du malware peut générer du code différent, mais fonctionnellement identique. Ainsi, les signatures basées sur des chaînes ou des heuristiques statiques sont rapidement inefficaces. [CardinalOps](https://cardinalops.com/blog/polymorphic-ai-malware-detection/), [SECURITY.COM](https://www.security.com/blog-post/no-escaping-ai).
 
-- **Exécution en mémoire** : les payloads peuvent être synthétisés à la volée par un interpréteur (Python, etc.) et exécutés in memory sans fichier sur disque. Par exemple, BlackMamba compile dynamiquement un keylogger en Python qu’il exécute avec exec()  
-  [HYAS](https://www.hyas.com/blog/blackmamba-using-ai-to-generate-polymorphic-malware). Dans ce cas, l’EDR ne voit jamais de nouveau fichier à analyser. Même compilé en exécutable autonome, le PoC de CardinalOps n’a déclenché qu’une faible alerte d’entropie après deux semaines d’exécution. Ainsi, la plupart des solutions EDR légitimes ont du mal à bloquer ces attaques hybrides.
+Comme l’explique CardinalOps, un malware IA peut « continuellement réécrire sa logique » : bien que la fonctionnalité reste la même, la structure du code change à chaque génération, rendant chaque échantillon nouveau et indétectable par correspondance de signature.
 
-- **Usage de canaux légitimes (living-off-the-land)** : l’IA peut automatiquement exploiter des outils ou services réputés légitimes pour exfiltrer ou cacher ses activités (p. ex. exfiltration via Slack, Teams, DNS, HTTPS chiffré). Dans le cas BlackMamba, le code généré a utilisé une webhook Slack pour sortir les données volées  
-  [CardinalOps](https://cardinalops.com/blog/polymorphic-ai-malware-detection/). D’autres démonstrations proposent des canaux comme Discord ou des signatures de code valides. Ces techniques rendent le comportement du malware difficile à distinguer d’un logiciel autorisé.
+- **Exécution en mémoire** : les payloads peuvent être synthétisés à la volée par un interpréteur (Python, etc.) et exécutés in memory sans fichier sur disque. Par exemple, BlackMamba compile dynamiquement un keylogger en Python qu’il exécute avec exec() . [HYAS](https://www.hyas.com/blog/blackmamba-using-ai-to-generate-polymorphic-malware).
+Dans ce cas, l’EDR ne voit jamais de nouveau fichier à analyser. Même compilé en exécutable autonome, le PoC de CardinalOps n’a déclenché qu’une faible alerte d’entropie après deux semaines d’exécution. Ainsi, la plupart des solutions EDR légitimes ont du mal à bloquer ces attaques hybrides.
+
+- **Usage de canaux légitimes (living-off-the-land)** : l’IA peut automatiquement exploiter des outils ou services réputés légitimes pour exfiltrer ou cacher ses activités (p. ex. exfiltration via Slack, Teams, DNS, HTTPS chiffré). Dans le cas BlackMamba, le code généré a utilisé une webhook Slack pour sortir les données volées [CardinalOps](https://cardinalops.com/blog/polymorphic-ai-malware-detection/).
+D’autres démonstrations proposent des canaux comme Discord ou des signatures de code valides. Ces techniques rendent le comportement du malware difficile à distinguer d’un logiciel autorisé.
 
 - **Connexions réseau atypiques** : un indicateur de compromission clé est l’appel aux API d’IA depuis des processus non conventionnels. CardinalOps recommande de traquer les connexions vers des domaines d’API LLM (openai.com, openai.azure.com, anthropic.com, huggingface.co, etc.) initiées par des processus autres que le navigateur. Ce genre de connexion peut servir à obtenir du code malveillant à la volée – un signe fort d’attaque IA.
 
@@ -76,8 +76,7 @@ En résumé, les malwares issus de LLM Abliterated combinent polymorphisme pouss
 
 Face à cette menace, plusieurs mesures pratiques sont recommandées avant tout déploiement d’LLM et pour la détection des payloads :
 
-- **Politique d’usage strict** : interdire l’installation ou l’utilisation non autorisée de LLM Abliterated sur les réseaux sensibles. De nombreuses entreprises (dont Samsung en 2023) ont déjà banni ChatGPT et autres IA grand public sur leurs postes et terminaux internes  
-  [Wiz](https://www.wiz.io/academy/chatgpt-security), par crainte de fuites de données ou d’introduction de malwares invisibles. Les organisations critiques doivent mettre en place des politiques claires : seuls les modèles vérifiés et supervisés peuvent être utilisés, avec journalisation de tout prompt, et blocage réseau des modèles suspects.
+- **Politique d’usage strict** : interdire l’installation ou l’utilisation non autorisée de LLM Abliterated sur les réseaux sensibles. De nombreuses entreprises (dont Samsung en 2023) ont déjà banni ChatGPT et autres IA grand public sur leurs postes et terminaux internes [Wiz](https://www.wiz.io/academy/chatgpt-security), par crainte de fuites de données ou d’introduction de malwares invisibles. Les organisations critiques doivent mettre en place des politiques claires : seuls les modèles vérifiés et supervisés peuvent être utilisés, avec journalisation de tout prompt, et blocage réseau des modèles suspects.
 
 - **Surveillance réseau et IDS/IPS spécialisés** : mettre en place des règles détectant les connexions inhabituelles vers des API IA. Autoriser uniquement certains domaines IA depuis des applications précises et alerter sinon. Les outils de type NDR (Network Detection and Response) peuvent signaler ces anomalies. De même, détecter les communications avec des sites frauduleux se faisant passer pour des IA.
 
