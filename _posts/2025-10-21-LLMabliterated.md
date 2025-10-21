@@ -1,3 +1,9 @@
+---
+title: "Modèles LLM « ablités » en cyber-offensive : risques et cas d’usage"
+categories: [Recherche,LLM]
+tags: [LLM,Recherche,Billet,IA]     # TAG names should always be lowercase
+---
+
 # Modèles LLM « ablités » en cyber-offensive : risques et cas d’usage
 
 Les modèles ablitérés (abréviation de « abliterated », c’est‐à‐dire « allégés » ou « uncensored ») sont des modèles de langage (LLM) dont on a supprimé les garde-fous et parfois compressés pour tourner localement. En pratique, on crée de tels modèles en désactivant les filtres de sécurité et en appliquant des méthodes de compression (quantification, élagage, distillation, etc.) pour réduire leur taille. La compression de modèle vise à diminuer le nombre de paramètres ou leur précision afin de faciliter le déploiement (par ex. sur des machines à ressources limitées). Les techniques principales sont :
